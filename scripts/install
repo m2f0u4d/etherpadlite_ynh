@@ -31,7 +31,10 @@ sudo yunohost app initdb $db_user -p $db_pwd
 sudo yunohost app setting etherpadlite mysqlpwd -v $db_pwd
 
 # Install dependances
-sudo apt-get install nodejs-legacy npm -y
+#sudo apt-get install nodejs-legacy npm -y
+curl -sL https://deb.nodesource.com/setup | bash -
+sudo apt-get install nodejs -y
+
 
 # Copy files to the right place
 final_path=/var/www/etherpadlite
