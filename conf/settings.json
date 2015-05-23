@@ -51,7 +51,7 @@
                     "database": "yunobase"
                   },
     "users": {
-      "admin": {
+      "admin1": {
         "password": "changeme1",
         "is_admin": true
       },
